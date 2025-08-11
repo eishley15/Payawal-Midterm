@@ -1,7 +1,10 @@
 import express, { response } from 'express';
 const __dirname = import.meta.dirname;
+import bodyParser from 'body-parser';
 
 const app = express();
+
+const urlEncodedParser = bodyParser.urlencoded({ extended: false});
 
 app.use(express.static('public'));
 
@@ -29,12 +32,12 @@ app.get('/adminForm', (req, res) => {
     res.sendFile(__dirname + '/pages/admin.html');
 });
 
-app.get('/getAdmin', (req, res) => {
+app.post('/postAdmin', urlEncodedParser, (req, res) => {
     var response = {
-        adminId : req.query.adminId,
-        firstName : req.query.firstName,
-        lastName : req.query.lastName,
-        section : req.query.section,
+        adminId : req.body.adminId,
+        firstName : req.body.firstName,
+        lastName : req.body.lastName,
+        section : req.body.section,
     }
 
     console.log("Response is: ", response);
