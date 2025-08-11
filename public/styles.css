@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Home Page */
+
+.homepage {
+    width: 280px;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+    padding: 20px 50px 40px;
+    box-shadow: 1px 4px 10px 1px #aaa;
+    font-family: sans-serif;
+}
+
+.homepage h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: inline;
+    margin: 10px;
+}
+
+.buttons a {
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    color: #eee;
+    font-weight: 700;
+    box-shadow: 1px 4px 10px 1px #aaa;
+    background-color: maroon;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    color: #ff9494;
+    background-color: rgb(72, 1, 1);
+    box-shadow: 1px 4px 10px 1px #3d3d3d;
+}
+
+/* Student and Admin Form */
+
+#form {
+    width: 280px;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+    padding: 20px 50px 40px;
+    box-shadow: 1px 4px 10px 1px #aaa;
+    font-family: sans-serif;
+}
+
+#form a {
+    text-decoration: none;
+    color: maroon;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px -10px;
+    display: flex;
+}
+
+#form * {
+    box-sizing: border-box;
+}
+
+#form h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#form input {
+    margin-bottom: 15px;
+}
+
+#form input[type=text] {
+    display: block;
+    height: 32px;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+#form button[type=submit] {
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    color: #eee;
+    font-weight: 700;
+    box-shadow: 1px 4px 10px 1px #aaa;
+    background-color: maroon;
+}
+
+#form button[type=submit]:hover {
+    color: #ff9494;
+    background-color: rgb(72, 1, 1);
+    box-shadow: 1px 4px 10px 1px #3d3d3d;
+}
