@@ -108,3 +108,29 @@ body {
     background-color: rgb(72, 1, 1);
     box-shadow: 1px 4px 10px 1px #3d3d3d;
 }
+
+input[type="file"] {
+  margin: 10px auto;
+  padding: 15px 5px;
+  border: 2px dashed #bbb;
+  background-color: #fff;
+  transition: border-color .25s ease-in-out;
+  &::file-selector-button{
+  padding: 1em 1.5em;
+  border-width: 0;
+  border-radius: 25px;
+  background-color: maroon;
+  color: #eee;
+  transition: all .25s ease-in-out;
+  cursor: pointer;
+  margin-right: 1em;
+  }
+  &:hover {
+  border-color: #888;
+    
+  &::file-selector-button{
+    
+    background-color: rgb(72, 1, 1);
+    }
+  }
+}

@@ -11,11 +11,13 @@
     <a href="/">Back</a>
     <h2 class="header">Admin Form</h2>
         <div>
-            <form action="/postAdmin" method="post">
+            <form action="/postAdmin" enctype="multipart/form-data" method="post">
             <input type="text" id="adminId" name="adminId" placeholder="Admin ID">
             <input type="text" id="firstName" name="firstName" placeholder="First Name">
             <input type="text" id="lastName" name="lastName" placeholder="Last Name">
             <input type="text" id="department" name="department" placeholder="Department">
+            <label for="file">Select Profile:</label>
+            <input type="file" id="file" name="file">
             <button type="submit">Submit</button>
             </form>
         </div>
